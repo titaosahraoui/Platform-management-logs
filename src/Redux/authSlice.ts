@@ -17,21 +17,17 @@ const initialState: IAuthState = {
 };
 
 const authSlice = createSlice({
-  name: 'auth',
+  name: "auth",
   initialState,
   reducers: {
-    setCredentials: (state, action: PayloadAction<IAuthState>) => {
-      const { token, username, email, id } = action.payload;
+    setCredentials: (state, action: PayloadAction<Partial<IAuthState>>) => { // ✅ Accept Partial<IAuthState>
       return {
         ...state,
-        isAuthenticated: true,
-        username,
-        email,
-        id,
-        token,
+        isAuthenticated: true, // ✅ Always set as true inside the reducer
+        ...action.payload, 
       };
     },
-    removeCredentials: state => {
+    removeCredentials: (state) => {
       return {
         ...state,
         isAuthenticated: false,

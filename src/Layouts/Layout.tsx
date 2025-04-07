@@ -5,7 +5,7 @@ import Sidebar from "../Components/Sidebar";
 const Layout = () => {
     const links = [
         { label: 'Dashnoard', path: '/' },
-        { label: 'Stream', path: '/about' },
+        { label: 'Stream', path: '/Dashboard' },
         { label: 'Search', path: '/payconnect/dev' },
         { label: 'Source', path: '/payconnect/Princing' },
         { label: 'System', path: '/contact' },

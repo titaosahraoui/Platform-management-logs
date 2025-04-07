@@ -1,5 +1,7 @@
 
+import LoginForm from "../Components/LoginForm";
 import Layout from "../Layouts/Layout";
+import Dashboard from "../pages/Dashboard";
 import HomePage from "../pages/HomePage";
 
 interface Route {
@@ -19,6 +21,15 @@ export const routes: Route[] = [
     parent: '/',
     path: '/',
     component: HomePage,
+  },
+  {
+    path: '/login',
+    component: LoginForm,
+  },
+  {
+  parent: '/',
+  path: '/Dashboard',
+  component: Dashboard,
   },
 ];
 

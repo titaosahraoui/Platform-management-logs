@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
@@ -7,7 +7,7 @@ module.exports = {
         primaryColor: '#FF4B00',
         secandaryColor: '#FF4B00',
         primaryRed: '#FF5630',
-        heroColor: ' #F5F5F5',
+        hero: '#F5F5F5',
         primaryBlack: '#060606',
       },
     },

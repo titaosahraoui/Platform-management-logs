@@ -1,9 +1,11 @@
+import Predictions from "../Components/Predictions";
+
 
 const Home = () => {
     return (
         <div>
-            <h1 className=' text-bold'>Home</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eaque tempora eveniet quisquam nemo voluptatibus ratione, eligendi doloremque architecto, officiis ab fuga quis minus odio cumque quas voluptate, quia asperiores.</p>
+            <h1>Cybersecurity Attack Predictions</h1>
+            <Predictions />
         </div>
     )
 }
