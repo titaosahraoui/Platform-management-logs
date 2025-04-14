@@ -1,5 +1,6 @@
 
 import BarChart from "../Components/BarChart";
+import DeviceKPIChart from "../Components/DeviceKpiChart";
 import Heatmap from "../Components/Heatmap";
 import NotebookData from "../Components/NotebookVisualization";
 
@@ -7,9 +8,11 @@ import NotebookData from "../Components/NotebookVisualization";
 const Dashboard = () => {
 
     return (
-        <div>
+        <div className="flex flex-wrap gap-5 p-5">
             <h1>Dashboard</h1>
-            <h2 className="text-2xl font-bold mb-4">Notebook Output</h2>
+            <div>
+                <DeviceKPIChart />
+            </div>
             <div>
                 <BarChart />
             </div>

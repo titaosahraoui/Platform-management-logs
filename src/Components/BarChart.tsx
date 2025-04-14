@@ -64,9 +64,11 @@ const BarChart = () => {
     }, []);
 
     return (
-        <div>
-            <h2>Attack Category Distribution</h2>
-            <svg ref={chartRef}></svg>
+        <div className="gap-5 p-5">
+            <div className=" bg-[#D7E0EA] w-[800px] h-[500px] rounded-xl lg:text-lg shadow-xl flex flex-wrap gap-5 p-5  ">
+                <h2>Attack Category Distribution</h2>
+                <svg ref={chartRef}></svg>
+            </div>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 
+import LogExplorer from "../Components/LogExplorer";
 import LoginForm from "../Components/LoginForm";
 import Layout from "../Layouts/Layout";
 import Dashboard from "../pages/Dashboard";
@@ -31,6 +32,11 @@ export const routes: Route[] = [
   path: '/Dashboard',
   component: Dashboard,
   },
+  {
+    parent: '/',
+    path: '/logs',
+    component: LogExplorer,
+    },
 ];
 
 export const parentRoutes: ParentRoute[] = [
